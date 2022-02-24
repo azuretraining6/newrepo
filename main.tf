@@ -19,3 +19,7 @@ provider "azurerm" {
   client_secret   = "g_77Q~TZ.jcXuHXR5lF2.awWMpdydxSOHhDGc"
   tenant_id       = "6dfb77b4-c9e1-4f45-ba05-02c1592c6232" 
 }
+resource "azurerm_resource_group" "example" {
+  name     = "example"
+  location = "West Europe"
+}
